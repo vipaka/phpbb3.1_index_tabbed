@@ -1,0 +1,27 @@
+{
+	"name": "vipaka/index_tabbed",
+	"type": "phpbb-extension",
+	"description": "Tabbed Index ext for phpBB 3.1",
+	"homepage": "https://www.esmaerin.com/phpbb/index_tabbed.zip",
+	"version": "1.0.1",
+	"time": "2014-10-30",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "Amelia Winstead",
+			"email": "ladyvipaka@yahoo.com",
+			"homepage": "www.esmaerin.com",
+			"role": "Lead Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Index Tabbed",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
+		}
+	}
+}

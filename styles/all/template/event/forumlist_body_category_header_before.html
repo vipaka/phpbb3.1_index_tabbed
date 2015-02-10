@@ -1,0 +1,27 @@
+
+<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT  -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			forumname = '{forumrow.FORUM_NAME}';
+			cat_name = forumname.replace(/\s+/g, '');
+			var nilul = '<ul id="forumtabs"></ul>'
+			var nili = '<li class="tab"><a href="#tabs-' + cat_name + '">{forumrow.FORUM_NAME}</a></li>';
+			var li_found = $( "#ttabs" ).find( "li.tab" ).length;
+			if (li_found > 0){
+				$('#ttabs #forumtabs').append(nili);
+			}
+			else{
+				$('#ttabs').prepend(nilul);
+				$('#ttabs #forumtabs').append(nili);
+			}
+
+			$("#ttabs li a").on('click', function(){
+				var curdiv = $(this).attr('href');
+				$('#ttabs li > div').attr('class', 'tab');
+				$(this).parent().attr('class', 'tab selected');
+				$('div.tabs .forabg').css('display', 'none');
+				$(curdiv).css('display', 'block');
+			});
+		});
+	</script>
+<!-- ENDIF -->
