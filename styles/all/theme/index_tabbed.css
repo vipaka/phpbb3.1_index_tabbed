@@ -1,31 +1,30 @@
-div.tabs .forabg{
+div.tabs .forabg, #tabs2 div{
 	display: none;
 }
-/*The below CSS is required for tabs styling but results in quicklink menu */
-#ttabs div:first-of-type{
+#tabs div:first-of-type, #tabs2 div:first-of-type{
 	display: block;
 }
-div.tabs li
+div.tabs li, #tabs2 li
 {
     display:inline;
 }
-#ttabs > ul:after {
+#tabs > ul:after, #tabs2 > ul:after {
 	clear: both;
 	content: '';
 	display: block;
 }
-#ttabs{
+#tabs, #tabs2{
 	line-height: normal;
 }
 
-#ttabs > ul{
+#tabs > ul, #tabs2 > ul{
 	list-style: none;
-	margin: 0;
+	margin: 0px 0px 0px 7px;
 	padding: 0;
 	position: relative;
 }
 
-#ttabs .tab{
+#tabs .tab, #tabs2 .tab{
 	display: block;
 	float: left;
 	font-size: 1em;
@@ -33,7 +32,7 @@ div.tabs li
 	line-height: 14px;
 }
 
-#ttabs .tab > a {
+#tabs .tab > a, #tabs2 .tab > a {
 	display: block;
 	padding: 5px 9px;
 	position: relative;
@@ -43,25 +42,20 @@ div.tabs li
 	border-radius: 4px 4px 0 0;
 	margin: 1px 1px 0 0;
 	cursor: pointer;
-	/*color css */
+}
+/* colors for prosilver, only for the second set of tabs. */
+#tabs2 .tab > a {
 	background: #BACCD9;
 	color: #536482;
 }
-#ttabs {
-	margin: 20px 0 0 7px;
-}
-#ttabs .activetab > a {
-	margin-top: 0;
-	padding-bottom: 7px;
-}
-/*color specific Css */
-#ttabs .tab > a:hover {
+
+#tabs2 .tab > a:hover {
 	background: #DDEDFB;
 	color: #D31141;
 }
 
-#ttabs .activetab > a,
-#ttabs .activetab > a:hover {
+#tabs2 .activetab > a,
+#tabs2 .activetab > a:hover {
 	background: #CADCEB;
 	background: -moz-linear-gradient(top, #E2F2FF 0%, #CADCEB 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E2F2FF), color-stop(100%, #CADCEB));
@@ -75,6 +69,60 @@ div.tabs li
 	color: #333333;
 }
 
-#ttabs .activetab > a:hover {
+#tabs2 .activetab > a:hover {
 	color: #000000;
+}
+#tabs2 {
+	line-height: normal;
+}
+
+#tabs2 .tab {
+	display: block;
+	float: left;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 14px;
+}
+
+#tabs2 .tab > a {
+	display: block;
+	padding: 5px 9px;
+	position: relative;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+}
+#tabs2 li a {
+	background: #78A7BF;
+	/*background-image: url("images/bg_tabs1.gif");*/
+	color: #fff; 
+}
+
+#tabs a {
+	/*background-image: url("images/bg_tabs1.gif");*/
+}
+
+#tabs2 a span {
+	color: #fff;
+}
+
+#tabs2 li a:hover {
+	background: #9CC6E5; 
+}
+
+#tabs2 a:hover span {
+	color: #fff;
+}
+
+#tabs2 .activetab a {
+background: #84BEE8; 
+
+	border-bottom-color: #CADCEB;
+}
+#tabs2 .activetab a span {
+	color: #fff;
+}
+
+#tabs2 .activetab a:hover span {
+	color: #fff;
 }

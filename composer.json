@@ -1,9 +1,9 @@
 {
-	"name": "vipaka/index_tabbed",
+	"name": "vipaka/indextabbed",
 	"type": "phpbb-extension",
 	"description": "Tabbed Index ext for phpBB 3.1",
-	"homepage": "https://www.esmaerin.com/phpbb/index_tabbed.zip",
-	"version": "1.0.1",
+	"homepage": "https://www.esmaerin.com/phpbb/indextabbed.zip",
+	"version": "1.0.3",
 	"time": "2014-10-30",
 	"license": "GPL-2.0",
 	"authors": [{

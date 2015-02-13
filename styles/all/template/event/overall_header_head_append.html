@@ -1,15 +1,7 @@
-<!-- INCLUDECSS ../theme/index_tabbed.css -->
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#ttabs div.forabg').each(function(){
-			var name = $(this).children().children().children().children().children().html();
-			split_name = name.split('<div class="list-inner">');
-			split_2 = split_name[1].split('</div>');
-			split_3 = split_2[0].split('</a');
-			split_4 = split_3[0].split('>');
-			split_5 = split_4[split_4.length-1];
-			cat_name = split_5.replace(/\s+/g, '');
-			$(this).attr('id', 'tabs-' + cat_name);
-		});
-	});
-</script>
+<!-- IF S_INDEX -->
+	<!-- INCLUDECSS index_tabbed.css -->
+	<!-- The following codes are to sort the index forum categories into their own separate tabs -->
+	<!-- INCLUDEJS forumtabs.js -->
+	<!-- The following codes are for sorting the birthdays/online/statistics into their own tabs -->
+	<!-- INCLUDEJS whois.js -->
+<!-- ENDIF -->
