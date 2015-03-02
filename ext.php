@@ -7,7 +7,7 @@
 *
 */
 
-namespace vipaka\index_tabbed;
+namespace vipaka\indextabbed;
 
 /**
 * @ignore
